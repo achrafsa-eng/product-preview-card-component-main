@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+:root{
+    --font-Montserrat :'Montserrat', sans-serif;
+    --font-Fraunces : 'Fraunces', serif;
+    --color-buttom: hsl(158, 36%, 37%);
+    --color-white: hsl(0, 0%, 100%);
+}
+body{
+    margin: 0;
+}
+main{
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.parent{
+    display: flex;
+    border-radius: 20px;
+}
+.item1{
+    width: 300px;
+    border-radius: 20px   0  0 20px;
+    background-image: url(./images/image-product-desktop.jpg);
+    background-size: cover;
+}
+.item2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-white);
+    padding: 20px;
+    border-radius: 0 20px  20px  0;
+}
+.buy a{
+    display: flex;
+    background-color: var(--color-buttom);
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 250px;
+    border-radius: 10px;
+}
+.buy a:hover{
+    background-color:hsl(157, 36%, 27%) ;
+}
+p{
+    color: hsl(228, 12%, 48%);
+    font-family: var(--font-Montserrat);
+    font-size: 14px;
+}
+.buy img{
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+}
+.buy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.buy a p {
+    color: var(--color-white);
+}
+.prix{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+.prix h1{
+    color: hsl(158, 36%, 37%);
+    
+}
+.prix p{
+    text-decoration: line-through;
+}
+h1{
+    font-family: var(--font-Fraunces);
+}
+@media screen and (max-width: 600px){
+    .parent{
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .item1{
+        height: 200px;
+        border-radius: 20px 20px 0  0 ;
+        background-image: url(./images/image-product-mobile.jpg);
+        background-size: cover;
+    }
+    .item2{
+        border-radius: 0 0 20px 20px;
+    }
+}
